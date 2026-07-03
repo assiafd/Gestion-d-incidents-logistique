@@ -1,0 +1,15 @@
+langgraph>=0.2.60
+langchain-core>=0.3.25
+langchain-openai>=0.2.12
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+python-dotenv>=1.0.1
+numpy>=1.26.0
+scikit-learn>=1.5.0
+pymongo>=4.10.0
+astrapy>=1.5.2
+streamlit>=1.40.0
+plotly>=5.24.0
+jsonschema>=4.23.0
+rich>=13.9.0
+pytest>=8.3.0

@@ -1,0 +1,21 @@
+[project]
+name = "incident-logistics-agent"
+version = "0.1.0"
+description = "Agent LangGraph pour la gestion sécurisée des incidents logistiques industriels."
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]

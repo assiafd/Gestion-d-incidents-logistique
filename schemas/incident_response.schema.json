@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IncidentLogisticsResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "answer",
+    "incident_type",
+    "risk_level",
+    "evidence",
+    "knowledge_graph_evidence",
+    "action_plan",
+    "human_validation_required",
+    "human_validation",
+    "database_status",
+    "security_validation",
+    "monitoring"
+  ],
+  "properties": {
+    "answer": { "type": "string" },
+    "incident_type": { "type": "string" },
+    "risk_level": { "enum": ["low", "medium", "high", "critical"] },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "excerpt", "score"],
+        "properties": {
+          "source": { "type": "string" },
+          "excerpt": { "type": "string" },
+          "score": { "type": "number" }
+        }
+      }
+    },
+    "knowledge_graph_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subject", "relation", "object"],
+        "properties": {
+          "subject": { "type": "string" },
+          "relation": { "type": "string" },
+          "object": { "type": "string" }
+        }
+      }
+    },
+    "action_plan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["priority", "action", "owner", "validation_required"],
+        "properties": {
+          "priority": { "type": "integer" },
+          "action": { "type": "string" },
+          "owner": { "type": "string" },
+          "validation_required": { "type": "boolean" }
+        }
+      }
+    },
+    "human_validation_required": { "type": "boolean" },
+    "human_validation": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "enum": ["approved", "rejected", "pending_external_review", "not_required"]
+        },
+        "validator": { "type": "string" },
+        "comment": { "type": "string" }
+      }
+    },
+    "database_status": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["astra", "mongodb"],
+      "properties": {
+        "astra": { "type": "object", "additionalProperties": true },
+        "mongodb": { "type": "object", "additionalProperties": true }
+      }
+    },
+    "security_validation": {
+      "type": "object",
+      "required": ["passed", "findings"],
+      "properties": {
+        "passed": { "type": "boolean" },
+        "findings": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "monitoring": { "type": "object" }
+  }
+}

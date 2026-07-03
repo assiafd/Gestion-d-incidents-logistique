@@ -1,0 +1,20 @@
+STANDARD OPERATING PROCEDURE (SOP)
+Gestion des incidents de transport
+
+SOP ID : SOP-LOG-001
+Version : 1.0
+
+Objectif
+Definir les actions a suivre en cas d'incident logistique affectant l'approvisionnement des usines.
+
+Regles :
+
+- Si un retard de transport depasse 2 heures sur l'axe Tanger Med - Kenitra, le transporteur doit immediatement notifier la Tour de Controle Logistique.
+
+- Le Responsable Supply Chain evalue l'impact sur la production.
+
+- Si le retard depasse 6 heures, la procedure de continuite d'activite est activee.
+
+- Si un fournisseur alternatif est disponible, une commande d'urgence peut etre declenchee apres validation des Achats.
+
+- Toute decision doit etre enregistree dans le rapport d'incident.

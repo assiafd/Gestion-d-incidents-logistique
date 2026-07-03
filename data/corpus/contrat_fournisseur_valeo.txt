@@ -1,0 +1,19 @@
+Extrait du contrat fournisseur
+
+Fournisseur principal : Valeo Kenitra
+
+Composants fournis :
+- Modules moteur
+- Capteurs electroniques
+
+Engagement de livraison :
+- Livraison quotidienne.
+- Delai contractuel : 24 heures.
+
+Clause de continuite :
+
+En cas de force majeure ou d'interruption de production chez Valeo Kenitra, le fournisseur alternatif homologue est Continental Tanger.
+
+Continental Tanger peut assurer un approvisionnement d'urgence avec un delai minimal de 24 heures.
+
+Toute activation du fournisseur alternatif doit etre validee par le Responsable Achats et le Responsable Qualite.

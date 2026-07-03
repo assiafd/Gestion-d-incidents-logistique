@@ -1,0 +1,22 @@
+Cartographie simplifiee du reseau logistique
+
+Hub Tanger Med
+- Reception des composants importes.
+- Distribution vers :
+  - Usine Renault Kenitra
+  - Entrepot Casablanca
+
+Entrepot Casablanca
+- Stock de securite.
+- Sert de site de secours pour l'usine de Kenitra.
+- Peut reapprovisionner Kenitra en cas de rupture.
+
+Usine Renault Kenitra
+- Recoit les composants moteurs, electroniques et systemes de freinage.
+- Depend principalement du Hub Tanger Med.
+
+Relations logistiques :
+
+Tanger Med --> Kenitra
+Tanger Med --> Casablanca
+Casablanca --> Kenitra (approvisionnement de secours)
