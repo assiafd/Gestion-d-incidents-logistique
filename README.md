@@ -269,14 +269,18 @@ Dashboard metier:
 streamlit run dashboards\business_dashboard.py --server.port 8501
 ```
 
+![Dashboard metier](docs/images/dashboard-metier.png)
+
 Il affiche:
 
 - chat IA;
-- KPI logistiques;
-- incidents;
-- statistiques;
-- historique;
-- graphiques.
+- KPI logistiques: nombre d'incidents, risque critique, validations HITL et cout estime;
+- vue operationnelle des requetes traitees;
+- historique des incidents avec question, type d'incident, niveau de risque, statut HITL, tokens et cout;
+- lecture rapide des decisions humaines et des situations a prioriser;
+- graphiques et statistiques metier pour suivre l'activite supply chain.
+
+Ce dashboard est destine aux responsables metier. Il permet de verifier rapidement si les incidents sont bien enregistres, si les validations humaines sont appliquees et si les risques critiques augmentent.
 
 Dashboard monitoring:
 
@@ -284,17 +288,21 @@ Dashboard monitoring:
 streamlit run dashboards\monitoring_dashboard.py --server.port 8502
 ```
 
+![Dashboard monitoring](docs/images/dashboard-monitoring.png)
+
 Il affiche:
 
-- latence;
-- cout;
-- tokens;
-- hallucinations;
-- toxicite;
-- attaques;
-- logs;
+- latence moyenne;
+- cout total estime;
+- volume de tokens consommes;
 - disponibilite;
-- graphiques temporels.
+- hallucinations detectees;
+- toxicite;
+- attaques detectees: prompt injection et jailbreak;
+- erreurs;
+- graphiques temporels de latence et de tokens.
+
+Ce dashboard est destine au suivi technique et securite. Il montre si l'agent reste disponible, combien il coute, comment evolue sa latence et si des tentatives d'attaque apparaissent dans les requetes. Les cartes se recalculent a partir des donnees MongoDB Atlas apres rafraichissement manuel de la page.
 
 ## 12. Installation
 
