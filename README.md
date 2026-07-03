@@ -468,6 +468,10 @@ Fichiers a ne pas inclure:
 
 ## 16. Documentation Restante
 
+Documentation technique complète :
+
+- `docs/Documentation_Technique.docx` : document professionnel en français avec page de garde, sommaire, captures d’écran décrites, architecture, workflow, sécurité, Agent Card et Runbook.
+
 Le README combine le contenu principal de:
 
 - `docs/architecture.md`
